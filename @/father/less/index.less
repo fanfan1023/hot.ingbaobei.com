@@ -1,0 +1,110 @@
+@import url(jquery.fullPage.less);
+@bgWidth: 1080/100%;
+@bgHeight: 1700/100%;
+
+
+// |animations
+@-webkit-keyframes slide-bit
+{
+    0%   {background-position: 0 5px;}
+    25%  {background-position: 0 0px;}
+    50%  {background-position: 0 5px;}
+    75%  {background-position: 0 10px;}
+    100% {background-position: 0 5px;}
+}
+/* Standard syntax */
+@keyframes slide-bit
+{
+    0%   {background-position: 0 5px;}
+    25%  {background-position: 0 0px;}
+    50%  {background-position: 0 5px;}
+    75%  {background-position: 0 10px;}
+    100% {background-position: 0 5px;}
+}
+body{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.bg-fast-load{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 0;
+  left: 0;
+  z-index: -99999;
+  overflow: hidden;
+}
+// audio box
+.audio-source-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  height: 1px;
+  width: 1px;
+  visibility: hidden;
+}
+// audio box
+// |animations
+.slide-tip{
+    padding: 5px 0;
+    box-sizing: content-box;
+    // border: 1px solid white;
+    // border-radius: 4px;
+    background-color: rgba(92,47,14,0.1);
+
+    -webkit-animation-name: slide-bit;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-name: slide-bit;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+
+    position: absolute;
+    left: 50%;
+    margin-left: -0.5em;
+    width: 1em;
+    height: 1em;
+
+    &.down{
+      background: url(../icon/slide-down.png) no-repeat 0 5px;
+      background-size: 100% auto;
+      bottom: 0;
+      z-index: 10;
+    }
+    &.up{
+      background: url(../icon/slide-up.png) no-repeat 0 5px;
+      background-size: 100% auto;
+      top: 0;
+      z-index: 10;
+    }
+  }
+
+
+html, body, {
+  background-color: #11abe4;
+}
+.section{
+  background-color: #11abe4;
+  // background-image: url(../icon/01-bg.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+
+
