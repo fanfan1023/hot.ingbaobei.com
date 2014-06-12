@@ -2,7 +2,7 @@ hot.ingbaobei.com
 ===================
 
 盈保倍-父亲节特辑。 [hot.ingbaobei.com/father/index.html](http://about.ingbaobei.com/@/father/index.html)  
-这个是github 上面的查看地址 [http://ingbaobeigroup.github.io/hot.ingbaobei.com/@/father/index.html](http://ingbaobeigroup.github.io/about.ingbaobei.com)   [http://hot.ingbaobei.com/@/father/index.html](http://hottest.ingbaobei.com/)  
+这个是github 上面的查看地址 [http://ingbaobeigroup.github.io/hot.ingbaobei.com/@/father/index.html](http://ingbaobeigroup.github.io/about.ingbaobei.com)   [http://hot.ingbaobei.com/@/father/index.html](http://hot.ingbaobei.com/@/father/index.html)  
 
 ------
 
@@ -45,6 +45,7 @@ $ anywhere 80
   css\: css 目录
   audio\: audio 目录
   icon\: icon 目录
+  icon.height\: 输出点质量高一点的jpg，网络好的时候浪费下别人的流量咯。
   js\: js 目录
     index.js: app js
     index.min.js：压缩
