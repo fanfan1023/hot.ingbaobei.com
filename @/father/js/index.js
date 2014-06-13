@@ -11,7 +11,9 @@ $(function() {
       navigationPosition: 'right',
       scrollingSpeed: 400,
       touchSensitivity: 3,
-      afterResize: function() {},
+      afterResize: function() {
+        reCountImgSize();
+      },
       onLeave: function(anchorLink, index, slideAnchor, slideIndex) {}
     });
   });
@@ -42,7 +44,7 @@ for (var i = imgs.length; i--;) {
     var newImage = function() {
       var img;
       var src = imgOlrSrc.getAttribute('high-src');
-      if (src !== undefined && src !== null && src !== "" ) {
+      if (src !== undefined && src !== null && src !== "") {
         img = document.createElement('img');
         img.onload = function() {
           if (img.width > 0) {
@@ -58,7 +60,6 @@ for (var i = imgs.length; i--;) {
 
     // 监控加载信息
     imgOlrSrc.onload = function() {
-      // console.log('222222');
       if (imgOlrSrc && imgOlrSrc.src === imgOlrSrc.getAttribute('high-src')) {
         imgOlrSrc.onload = null;
         newImage = null;
@@ -75,4 +76,43 @@ for (var i = imgs.length; i--;) {
       imgOlrSrc.src = imgOlrSrc.src + "?&" + (new Date()).getTime();
     }
   })();
+
+  /**
+   * @name reCountImgSize
+   * @desc 计算二维码位置及大小
+   * @depend ['jQuery']
+   * @return null
+   **/
+  function reCountImgSize() {
+    var bodyHeight = window.innerHeight;
+    var bodyWidth = window.innerWidth;
+    if (bodyWidth > bodyHeight) {
+      // alert('系统检测到为横屏，请使用竖屏进行查看页面。');
+    }
+
+    // qr-img
+    var qrImage = $('.page8-qr');
+    // 二维码高宽比例，当他为正方形
+    var qeIdWH = 1; // 261 / 260;
+
+    // 下面的 261 为 psd 文件二维码的宽度，1920 为画布高度， 1080为画布宽度。
+    var qrImageWidth, qrImageWidthCount, qrImageHeightCount; 
+    qrImageWidthCount = 261 * bodyWidth / 1080;
+    qrImageHeightCount = 261 * bodyHeight / 1920;
+    qrImageWidth = qrImageWidthCount > qrImageHeightCount? qrImageHeightCount: qrImageWidthCount;
+
+    qrImage.css({
+      width: qrImageWidth * qeIdWH,
+      height: qrImageWidth,
+      marginLeft: -(qrImageWidth * qeIdWH / 2),
+      marginTop: -(qrImageWidth / 2)
+    })
+    // |qr-img
+
+
+
+  }
+
+  reCountImgSize();
+
 }
