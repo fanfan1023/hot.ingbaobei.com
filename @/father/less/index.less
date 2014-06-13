@@ -74,13 +74,13 @@ body{
     height: 1em;
 
     &.down{
-      background: url(../icon/slide-down.png) no-repeat 0 5px;
+      background: url(../icon/slide-down.png?20140613-4) no-repeat 0 5px;
       background-size: 100% auto;
       bottom: 0;
       z-index: 10;
     }
     &.up{
-      background: url(../icon/slide-up.png) no-repeat 0 5px;
+      background: url(../icon/slide-up.png?20140613-4) no-repeat 0 5px;
       background-size: 100% auto;
       top: 0;
       z-index: 10;
@@ -93,7 +93,7 @@ html, body, {
 }
 .section{
   background-color: #f1f1f1;
-  background-image: url(../icon/loading.gif);
+  background-image: url(../icon/loading.gif?20140613-4);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   // -webkit-background-size: 100% 100%;
@@ -141,4 +141,76 @@ img.page8-qr{
   left: 100% * (765+130) / @jpgWidth;
   width: 100% * 261 / @jpgWidth;
   height: 100% * 261 / @jpgHeight;;
+}
+
+.audio-button-box{
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  width: 10%;
+  img{
+    display: none;
+    width: 100%;
+    // height: 100%;
+  }
+  img.play{
+    display: block;
+  }
+  &.stop{
+    img.stop{
+      display: block;
+    }
+    img.play{
+      display: none;
+    }
+  }
+}
+
+@animationDuration: 3s;
+.audio-button-box{
+  img.play{
+    -webkit-animation-name: round;
+    -webkit-animation-duration: @animationDuration;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    // -webkit-animation-direction: alternate; //是否应该轮流反向播放动画。
+    -webkit-animation-play-state: running;
+
+    animation-name: round;
+    animation-duration: @animationDuration;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    // animation-direction: alternate; //是否应该轮流反向播放动画。
+    animation-play-state: running;
+  }
+}
+.transform(@deg: 0deg){
+  -ms-transform: rotate(@deg);
+  -webkit-transform: rotate(@deg);
+  transform: rotate(@deg);
+}
+.keyframes(@from: 0deg, @to: 360deg){
+  from{
+    .transform(@from);
+  }
+  to{
+    .transform(@to);
+  }
+}
+@-webkit-keyframes round{
+  .keyframes();
+}
+@keyframes round{
+  .keyframes();
+}
+
+
+a[href^="http://tongji.baidu.com"]{
+  position:absolute;
+  display: block;
+  z-index:-999;
+  left:-100000px;
+  top:-111111px;
 }
