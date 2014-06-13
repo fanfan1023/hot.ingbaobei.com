@@ -4,14 +4,14 @@ module.exports = function(grunt) {
 
     concat: {
       build: {
-        src: ['./@/js/jquery.min.js', './@/js/jquery-ui.min.js', './@/js/jquery.fullPage.min.js', './@/js/idnex.js'],
-        dest: './@/js/index.js'
+        src: ['./js/jquery.min.js', './js/jquery-ui.min.js', './js/jquery.fullPage.min.js', './js/index.js'],
+        dest: './js/index.concat.js'
       }
     },
     uglify: {
       build: {
-        src: ['./@/js/index.js'],
-        dest: './@/js/index.min.js'
+        src: ['./js/index.concat.js'],
+        dest: './js/index.min.js'
       }
     }
   });
