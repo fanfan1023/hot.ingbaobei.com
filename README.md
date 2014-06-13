@@ -1,8 +1,8 @@
 hot.ingbaobei.com
 ===================
 
-盈保倍专题。 [hot.ingbaobei.com](http://about.ingbaobei.com/index.html)  
-这个是github 上面的查看地址 [http://ingbaobeigroup.github.io/hot.ingbaobei.com](http://ingbaobeigroup.github.io/about.ingbaobei.com)   [http://hot.ingbaobei.com/](http://hottest.ingbaobei.com/)  
+盈保倍专题。 [hot.ingbaobei.com](http://hot.ingbaobei.com/index.html)  
+这个是github 上面的查看地址 [http://ingbaobeigroup.github.io/hot.ingbaobei.com](http://ingbaobeigroup.github.io/hot.ingbaobei.com)   [http://hot.ingbaobei.com/](http://hottest.ingbaobei.com/)  
 
 ------
 

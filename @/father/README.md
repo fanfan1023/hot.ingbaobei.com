@@ -1,8 +1,8 @@
 hot.ingbaobei.com
 ===================
 
-盈保倍-父亲节特辑。 [hot.ingbaobei.com/father/index.html](http://about.ingbaobei.com/@/father/index.html)  
-这个是github 上面的查看地址 [http://ingbaobeigroup.github.io/hot.ingbaobei.com/@/father/index.html](http://ingbaobeigroup.github.io/about.ingbaobei.com)   [http://hot.ingbaobei.com/@/father/index.html](http://hot.ingbaobei.com/@/father/index.html)  
+盈保倍-父亲节特辑。 [hot.ingbaobei.com/father/index.html](http://hot.ingbaobei.com/@/father/index.html)  
+这个是github 上面的查看地址 [http://ingbaobeigroup.github.io/hot.ingbaobei.com/@/father/index.html](http://ingbaobeigroup.github.io/hot.ingbaobei.com/@/father/index.html)   [http://hot.ingbaobei.com/@/father/index.html](http://hot.ingbaobei.com/@/father/index.html)  
 
 ------
 
